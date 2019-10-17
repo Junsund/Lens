@@ -166,7 +166,7 @@ for(var i = 0; i<sel.length; i++){
     var p1y = sel[i].pathPoints[0].anchor[1];
     var p2x = sel[i].pathPoints[1].anchor[0];
     var p2y = sel[i].pathPoints[1].anchor[1];
-    // 最初に書いた線が左か右かで今後結果が変わってくるので、いっそのこと←に再描写してしまう。
+    // 最初に書いた線が左か右かで今後結果が変わってくるので、いっそのこと→に再描写してしまう。
     //これによって左側がp1に統一
     if(p1x>p2x){
         lObj = activeDocument.pathItems.add();
@@ -215,7 +215,7 @@ for(var i = 0; i<sel.length; i++){
     var p1y = sel[i].pathPoints[0].anchor[1];
     var p2x = sel[i].pathPoints[1].anchor[0];
     var p2y = sel[i].pathPoints[1].anchor[1];
-    //これも最初に書いた線が左か右かで今後結果が変わってくるので、いっそのこと←に再描写してしまう。
+    //これも最初に書いた線が左か右かで今後結果が変わってくるので、いっそのこと→に再描写してしまう。
     //これによって左側がp1に統一
     if(p1x>p2x){
         lObj = activeDocument.pathItems.add();
